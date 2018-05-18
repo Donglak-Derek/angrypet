@@ -1,0 +1,20 @@
+label{
+	display: block;
+}
+
+form{
+	width: 50%;
+	text-align: right;
+	border: thin black solid;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 5px;
+}
+#left{
+	text-align: center;
+}
+
+input{
+	border-radius: 3px;
+}
+

@@ -1,0 +1,30 @@
+<div style="text-align:left">
+
+  <h3>These pets are looking for a home!</h3>
+
+<a [routerLink]="['/pets', 'new']"> Add a pet to the shelter </a>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Type</th> 
+    <th>Actions</th>
+  </tr>
+<!--   <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr> -->
+</table>
+</div>
+
+
+
+<div *ngFor="let pet of pets; let idx = index">
+  <p>{{ pet }}</p>
+</div>
+

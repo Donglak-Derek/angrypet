@@ -1,0 +1,33 @@
+<div style="text-align:left">
+<h3>Know of a pet needing a home?</h3>
+
+<form (submit)="onSubmit()">
+    <label for="name">Pet Name:
+    <input type="text" name="name" [(ngModel)]="pet.name" />
+    </label>
+    <label for="name">Pet Type:
+    <input type="text" name="type" [(ngModel)]="pet.type" />
+    </label>
+
+    <label for="name">Description:
+    <input type="text" name="description" [(ngModel)]="pet.description" />
+    </label>
+
+    <p id="left">Skills</p>
+    	<label for="name">Skill 1:
+	    <input type="text" name="skill01" [(ngModel)]="pet.skill01" />
+	    </label>
+	    <label for="name">Skill 2:
+	    <input type="text" name="skill02" [(ngModel)]="pet.skill02" />
+	    </label>
+	    <label for="name">Skill 3:
+	    <input type="text" name="skill03" [(ngModel)]="pet.skill03" />
+	    </label>
+   
+    <input type="submit" value="Create Pet" />
+    <input type="submit" value="Cancel" />
+</form>
+</div>
+<div *ngIf="errors.title">
+	{{ errors.title.message }}
+</div>
